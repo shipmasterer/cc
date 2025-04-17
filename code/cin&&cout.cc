@@ -6,7 +6,7 @@ int main()
      cin >> a;
      cout << a << "\n"
           << endl;
-     cout << "aaewdaef" << "\n"
+     cout << "aÄãaewdaef" << "\n"
           << endl;
      return 0;
 }

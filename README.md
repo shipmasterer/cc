@@ -170,4 +170,66 @@ bool类型占1个字节大小，且只有两个值：
 
 # 5常用函数
 
-## 5.1
+## 5.1输入输出
+
+示例（cin&&cout.cc）
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+     int a;
+     cin >> a;
+     cout << a << "\n"
+          << endl;
+     cout << "aaewdaef" << "\n"
+          << endl;
+     return 0;
+}
+```
+
+# 6函数的重载
+
+![函数的重载](./README.assets/函数的重载-1744899030844-2.png)
+
+示例
+
+```c++
+#include <bits/stdc++.h>
+#include <iostream>
+
+using namespace std;
+
+void add1(int a, int b);
+void add1(int a, int b, int c);
+
+int main()
+{
+    int a = 0, b = 0, c = 0;
+    cin >> a >> b >> c;
+    add1(a, b);
+    add1(a, b, c);
+
+    return 0;
+}
+
+void add1(int a, int b)
+{
+    int x;
+    x = a + b;
+    cout << "重载A1\n"
+         << x << "\n"
+         << endl;
+}
+
+void add1(int a, int b, int c)
+{
+    int x;
+    x = a + b + c;
+    cout << "重载B2\n"
+         << x << "\n"
+         << endl;
+}
+```
+
