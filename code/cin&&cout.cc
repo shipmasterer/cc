@@ -8,5 +8,5 @@ int main()
           << endl;
      cout << "aaewdaef" << "\n"
           << endl;
-     return 0;
+     system("pause");
 }

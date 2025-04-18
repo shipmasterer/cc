@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <stdio.h>
 using namespace std;
 int main()
 {
@@ -6,10 +7,10 @@ int main()
     for (i = 0; i <= 5; i++)
     {
         /* code */
-        cout << i << "\n"
-             << endl;
+        cout << i << "\n";
     }
 
-    cout << "aewdaef" << endl;
-    return 0;
+    cout << "aewdaef我";
+
+    system("pause");
 }
