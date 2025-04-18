@@ -9,11 +9,11 @@ int main()
     for (int i = 0; i < 3; i++)
     {
         /* code */
-        while (!(cin >> a[i])) // 如果输入失败进入while循环
+        while (!(cin >> a[i])) //
         {
-            cin.clear();           // 清空接受区
-            cin.ignore(100, '\n'); // 取走换行字符
-            cout << "请输入合法值(int)类型\n"
+            cin.clear();           //
+            cin.ignore(100, '\n'); //
+            cout << "\n"
                  << endl;
         }
     }
@@ -21,7 +21,7 @@ int main()
     return 0;
 }
 
-void add(int a[], int b) // 将数组作为参数传递
+void add(int a[], int b)
 {
     int sum = 0;
     for (int i = 0; i < b; i++)

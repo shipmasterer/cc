@@ -10,6 +10,6 @@ int main()
              << endl;
     }
 
-    cout << "ÎŞaewdaef" << endl;
+    cout << "aewdaef" << endl;
     return 0;
 }

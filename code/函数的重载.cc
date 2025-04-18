@@ -20,7 +20,7 @@ void add1(int a, int b)
 {
     int x;
     x = a + b;
-    cout << "ÖØÔØA1\n"
+    cout << "A1\n"
          << x << "\n"
          << endl;
 }
@@ -29,7 +29,7 @@ void add1(int a, int b, int c)
 {
     int x;
     x = a + b + c;
-    cout << "ÖØÔØB2\n"
+    cout << "B2\n"
          << x << "\n"
          << endl;
 }
