@@ -385,3 +385,19 @@ void add1(int a, int b, int c)
 }
 ```
 
+# 7.对象
+
+##  7.1类 
+
+7.1.1创建类
+
+```c++
+class MyFirstClass
+{
+
+};
+```
+
+![image-20250420202618762](./README.assets/image-20250420202618762-1745151980734-11.png)
+
+ 
