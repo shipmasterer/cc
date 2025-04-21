@@ -14,11 +14,11 @@ public:
     void fill_tank(float liter);
 };
 
-Car::Car(/* args */)
+Car::Car(/* args */)//构造器
 {
 }
 
-Car::~Car()
+Car::~Car()//析构器
 {
 }
 
@@ -30,7 +30,7 @@ void Car::fill_tank(float liter)
 
 int main()
 {
-    float i = 1.1;
+    float i = 1.1;  
     Car mycar;
 
     mycar.fill_tank(i);
