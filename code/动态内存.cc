@@ -12,7 +12,7 @@ public:
     Company(std::string theName);
     ~Company();
     virtual void printInfo();
-    // è™šå‡½æ•°(ç±»ä¼¼å‡½æ•°é‡è½½)ï¼Œå½“çˆ¶ç±»å’Œå­ç±»é‡Œçš„å‡½æ•°é‡åæ—¶ä½¿ç”¨è™šå‡½æ•°ï¼Œè¿™æ ·å¯ä»¥åœ¨å¯¹è±¡ä½¿ç”¨æœ¬å¯¹è±¡çš„é‡åçš„å‡½æ•°
+    // Ğéº¯Êı(ÀàËÆº¯ÊıÖØÔØ)£¬µ±¸¸ÀàºÍ×ÓÀàÀïµÄº¯ÊıÖØÃûÊ±Ê¹ÓÃĞéº¯Êı£¬ÕâÑù¿ÉÒÔÔÚ¶ÔÏóÊ¹ÓÃ±¾¶ÔÏóµÄÖØÃûµÄº¯Êı
 };
 
 Company::Company(std::string theName)
@@ -26,7 +26,7 @@ Company::~Company()
 
 void Company::printInfo()
 {
-    std::cout << "è¿™ä¸ªå…¬å¸åå­—å«" << name << "\n";
+    std::cout << "Õâ¸ö¹«Ë¾Ãû×Ö½Ğ" << name << "\n";
 }
 
 class TeachCompany : public Company
@@ -38,7 +38,7 @@ public:
     TeachCompany(std::string theName, std::string product);
     ~TeachCompany();
     virtual void printInfo();
-    // è™šå‡½æ•°(ç±»ä¼¼å‡½æ•°é‡è½½)ï¼Œå½“çˆ¶ç±»å’Œå­ç±»é‡Œçš„å‡½æ•°é‡åæ—¶ä½¿ç”¨è™šå‡½æ•°ï¼Œè¿™æ ·å¯ä»¥åœ¨å¯¹è±¡ä½¿ç”¨æœ¬å¯¹è±¡çš„é‡åçš„å‡½æ•°
+    // Ğéº¯Êı(ÀàËÆº¯ÊıÖØÔØ)£¬µ±¸¸ÀàºÍ×ÓÀàÀïµÄº¯ÊıÖØÃûÊ±Ê¹ÓÃĞéº¯Êı£¬ÕâÑù¿ÉÒÔÔÚ¶ÔÏóÊ¹ÓÃ±¾¶ÔÏóµÄÖØÃûµÄº¯Êı
 };
 
 TeachCompany::TeachCompany(std::string theName, std::string product) : Company(theName)
@@ -52,10 +52,23 @@ TeachCompany::~TeachCompany()
 
 void TeachCompany::printInfo()
 {
-    std::cout << "å…¬å¸çš„ä¸»è¦äº§å“ä¸º" << name << "\n";
+    std::cout << "Õâ¸ö¹«Ë¾Ãû×Ö½Ğ" << name << "\n";
+    std::cout << "¹«Ë¾µÄÖ÷Òª²úÆ·Îª" << product << "\n";
 }
 
 int main()
 {
+    Company *company = new Company("APPLE");
+    company->printInfo();
+
+    delete company;
+    company = NULL;
+
+    company = new TeachCompany("APPLE", "IPHONE");
+    company->printInfo();
+
+    delete company;
+    company = NULL;
+
     return 0;
 }
