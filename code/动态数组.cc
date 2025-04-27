@@ -16,7 +16,7 @@ int main()
 
     for (int i = 0; i < count; i++)
     {
-        std::cout << x[i] << "\n";
+        std::cout << "x" << "[" << i << "]" << "==" << x[i] << "\n";
         /* code */
     }
     return 0;
